@@ -1,0 +1,27 @@
+#!/bin/bash
+
+PYTHON=$(which python3)
+if [ "$PYTHON" == '' ]; then
+  echo "Cannot find python3 executable - exiting"
+  exit
+fi
+
+NVPNDIR="$HOME/.config/nordvpn"
+if [ ! -d $NVPNDIR ]; then
+    mkdir -p "$NVPNDIR"
+fi
+
+DEBUG=false; case "$@" in -d|--debug) DEBUG=true; esac
+
+if ! pgrep -u $USER -f python3.*nordvpn-indicator &>/dev/null; then
+    # Use file as tty output
+    # Launch with all passed arguments (future reserved)
+    if $DEBUG; then
+        $PYTHON -Wd /usr/lib/nordvpn-indicator/main.py $@
+    else
+        LOG="$NVPNDIR/indicator.log"
+        nohup $PYTHON -OO /usr/lib/nordvpn-indicator/main.py $@ &> $LOG  &
+        echo "Output written to $LOG"
+        echo "You can now close the terminal."
+    fi
+fi

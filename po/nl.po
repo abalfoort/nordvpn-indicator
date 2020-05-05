@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Arjen Balfoort <arjenbalfoort@solydxk.com>, 2020
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-05 18:13+0200\n"
+"PO-Revision-Date: 2019-03-24 09:06+0000\n"
+"Last-Translator: Arjen Balfoort <arjenbalfoort@solydxk.com>, 2020\n"
+"Language-Team: Dutch (https://www.transifex.com/solydxk/teams/54212/nl/)\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: usr/lib/nordvpn-indicator/login.py:29
+msgid "NordVPN Login"
+msgstr "NordVPN Login"
+
+#: usr/lib/nordvpn-indicator/login.py:46
+msgid "Email"
+msgstr "Email"
+
+#: usr/lib/nordvpn-indicator/login.py:54
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: usr/lib/nordvpn-indicator/login.py:81
+msgid "Cannot find {}."
+msgstr "Kan {} niet vinden."
+
+#: usr/lib/nordvpn-indicator/login.py:83
+msgid "Login/password was not given."
+msgstr "Login/wachtwoord niet gegeven."
+
+#: usr/lib/nordvpn-indicator/settings.py:32
+msgid "NordVPN Settings"
+msgstr "NordVPN Instellingen"
+
+#: usr/lib/nordvpn-indicator/settings.py:51
+msgid "Auto Connect"
+msgstr "Automatisch Verbinden"
+
+#: usr/lib/nordvpn-indicator/settings.py:52
+msgid ""
+"Automatically connect to NordVPN on login.\n"
+"You can optionally select a country or a recommended server."
+msgstr ""
+"Maak automatisch verbinding met NordVPN bij het inloggen.\n"
+"U kunt optioneel een land of een aanbevolen server selecteren."
+
+#: usr/lib/nordvpn-indicator/settings.py:78
+msgid "Cyber Security"
+msgstr "Cyberveiligheid"
+
+#: usr/lib/nordvpn-indicator/settings.py:79
+msgid ""
+"Automatically block suspicious websites\n"
+"and block advertisements."
+msgstr ""
+"Automatisch verdachte websites\n"
+"en advertenties blokkeren."
+
+#: usr/lib/nordvpn-indicator/settings.py:85
+msgid "Kill Switch"
+msgstr "Kill Switch"
+
+#: usr/lib/nordvpn-indicator/settings.py:86
+msgid ""
+"Disable system-wide internet access\n"
+"if the VPN connection suddenly disconnects."
+msgstr ""
+"Systeembrede internettoegang uitschakelen\n"
+"als de VPN-verbinding plotseling wordt verbroken."
+
+#: usr/lib/nordvpn-indicator/settings.py:92
+msgid "Protocol"
+msgstr "Protocol"
+
+#: usr/lib/nordvpn-indicator/settings.py:105
+msgid "NordLynx"
+msgstr "NordLynx"
+
+#: usr/lib/nordvpn-indicator/settings.py:106
+msgid ""
+"Use NordLynx instead of OpenVPN.\n"
+"Deselect to use the default OpenVPN."
+msgstr ""
+"Gebruik NordLynx in plaats van OpenVPN.\n"
+"Deselecteer om de standaard OpenVPN te gebruiken."
+
+#: usr/lib/nordvpn-indicator/settings.py:111
+msgid "Logs"
+msgstr "Logbestanden"
+
+#: usr/lib/nordvpn-indicator/settings.py:115
+msgid "View Logs"
+msgstr "Logbestanden bekijken"
+
+#: usr/lib/nordvpn-indicator/main.py:50
+msgid "Get a NordVPN account"
+msgstr "Een NordVPN account aanvragen"
+
+#: usr/lib/nordvpn-indicator/main.py:52 usr/lib/nordvpn-indicator/main.py:53
+#: usr/lib/nordvpn-indicator/main.py:55 usr/lib/nordvpn-indicator/main.py:56
+msgid "Quick connect"
+msgstr "Snel verbinden"
+
+#: usr/lib/nordvpn-indicator/main.py:54
+msgid "Disconnect"
+msgstr "Verbreken"
+
+#: usr/lib/nordvpn-indicator/main.py:58
+msgid "Manual connect"
+msgstr "Handmatig verbinden"
+
+#: usr/lib/nordvpn-indicator/main.py:59
+msgid "Status Information"
+msgstr "Status Informatie"
+
+#: usr/lib/nordvpn-indicator/main.py:60
+msgid "Rate last connection"
+msgstr "Waardeer de laatste connectie"
+
+#: usr/lib/nordvpn-indicator/main.py:61
+msgid "poor"
+msgstr "slecht"
+
+#: usr/lib/nordvpn-indicator/main.py:62
+msgid "excellent"
+msgstr "uitstekend"
+
+#: usr/lib/nordvpn-indicator/main.py:63
+msgid ""
+"You are not logged into NordVPN.\n"
+"Please, login with: nordvpn login"
+msgstr ""
+"U bent niet op NordVPN ingelogd.\n"
+"Log in met: nordvpn login"
+
+#: usr/lib/nordvpn-indicator/main.py:75
+#: etc/xdg/autostart/nordvpn-indicator.desktop.in.h:1
+msgid "NordVPN Indicator"
+msgstr "NordVPN Indicator"
+
+#: usr/lib/nordvpn-indicator/main.py:169
+msgid "Settings"
+msgstr "Instellingen"
+
+#: usr/lib/nordvpn-indicator/main.py:173
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: usr/lib/nordvpn-indicator/main.py:290
+msgid "Not logged into NordVPN."
+msgstr "Niet op NordVPN ingelogd."
+
+#: usr/lib/nordvpn-indicator/main.py:319
+msgid "If the problem persists, contact NordVPN customer support."
+msgstr ""
+"Als het probleem aanhoudt, neem dan contact op met de klantenservice van "
+"NordVPN."
+
+#: usr/lib/nordvpn-indicator/main.py:320
+#, python-brace-format
+msgid "Failed to connect to \"{0}\""
+msgstr "Kon geen verbinding maken met \"{0}\"."
+
+#: usr/lib/nordvpn-indicator/main.py:320
+#, python-brace-format
+msgid "Failed to disconnect from \"{0}\""
+msgstr "Kon verbinding niet verbreken met \"{0}\"."
+
+#: usr/lib/nordvpn-indicator/connect.py:27
+msgid "NordVPN Connect"
+msgstr "NordVPN Verbinden"
+
+#: etc/xdg/autostart/nordvpn-indicator.desktop.in.h:2
+msgid "Systemtray icon for the NordVPN application"
+msgstr "Systeemvakpictogram voor de NordVPN-applicatie"

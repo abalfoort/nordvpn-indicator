@@ -1,0 +1,38 @@
+#!/usr/bin/expect -f
+
+# apt install expect
+# https://en.wikipedia.org/wiki/Expect
+# Run with: expect nordvpn-login.exp "<login>" "<pwd>"
+
+#read the input parameters
+set login [lindex $argv 0]
+set pwd [lindex $argv 1]
+
+#check if all were provided
+if { $login == "" || $pwd == "" }  {
+  puts "Usage: <login> <pwd>\n"
+  exit 3
+}
+
+set timeout 10
+spawn nordvpn login
+expect {           
+    "sername" { send "$login\r" }
+    "mail" { send "$login\r" }
+    timeout { exit 1 }
+    eof { exit 2 }
+}
+expect {           
+    "assword" { send "$pwd\r" }
+    timeout { exit 1 }
+    eof { exit 2 }
+}
+expect {           
+    "elcome" { exit 0 }
+    timeout { exit 1 }
+    eof { exit 2 }
+}
+
+# You shouldn't come here
+expect eof
+exit 4

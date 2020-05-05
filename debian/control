@@ -1,0 +1,25 @@
+Source: nordvpn-indicator
+Section: web
+Priority: optional
+Maintainer: Arjen Balfoort <arjenbalfoort@solydxk.com>
+Build-Depends: debhelper (>= 9)
+  , python3 (>= 3.2)
+  , transifex-client
+  , translate-toolkit
+  , dh-python
+Standards-Version: 3.9.8
+
+Package: nordvpn-indicator
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+  , nordvpn (>= 3.3.0)
+  , gir1.2-gtk-3.0
+  , gir1.2-appindicator3-0.1
+  , expect
+  , curl
+  , jq
+  , logrotate
+  , xdg-utils
+Recommends: wireguard
+Description: Systemtray icon for the NordVPN application
+ After installation you need to logout and login again.

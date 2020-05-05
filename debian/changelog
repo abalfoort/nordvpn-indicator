@@ -1,0 +1,256 @@
+nordvpn-indicator (1.8.6) stable; urgency=low
+
+  * Fix wrong status when not connected to the internet
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 05 May 2020 18:10:09 +0200
+
+nordvpn-indicator (1.8.5) stable; urgency=low
+
+  * Fix icon always connected
+  * Put default order URL in nordvpn-indicator.conf
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 19 Apr 2020 07:57:37 +0200
+
+nordvpn-indicator (1.8.4) stable; urgency=low
+
+  * Updated translation: de
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 26 Feb 2020 08:18:32 +0100
+
+nordvpn-indicator (1.8.3) stable; urgency=low
+
+  * Updated translation: lt
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 30 Jan 2020 21:14:32 +0100
+
+nordvpn-indicator (1.8.2) stable; urgency=low
+
+  * Show connection rating result
+  * Update deprecated code
+  * Updated translation: pt
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 13 Jan 2020 15:41:15 +0100
+
+nordvpn-indicator (1.8.1) stable; urgency=low
+
+  * Add connection rating
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 07 Jan 2020 11:15:31 +0100
+
+nordvpn-indicator (1.8.0) stable; urgency=low
+
+  * Fix bug showing not connected on slow VPN
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 06 Dec 2019 11:24:20 +0100
+
+nordvpn-indicator (1.7.9) stable; urgency=low
+
+  * Updated translation: pt
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 10 Nov 2019 10:46:47 +0100
+
+nordvpn-indicator (1.7.8) stable; urgency=low
+
+  * Updated translation: da
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 08 Nov 2019 17:26:48 +0100
+
+nordvpn-indicator (1.7.7) stable; urgency=low
+
+  * Fix country names with spaces not listed
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 08 Oct 2019 15:39:03 +0200
+
+nordvpn-indicator (1.7.6) stable; urgency=low
+
+  * Resolve bug not able to connect through menu
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 15 Sep 2019 16:57:41 +0200
+
+nordvpn-indicator (1.7.5) stable; urgency=low
+
+  * Check for daemon.log to decide account availability
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 10 Sep 2019 13:34:34 +0200
+
+nordvpn-indicator (1.7.4) stable; urgency=low
+
+  * Updated translation: ca
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 31 Aug 2019 21:26:13 +0200
+
+nordvpn-indicator (1.7.3) stable; urgency=low
+
+  * Better format status information
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 30 Aug 2019 11:59:40 +0200
+
+nordvpn-indicator (1.7.2) stable; urgency=low
+
+  * Updated translations: de, li
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 29 Aug 2019 17:01:23 +0200
+
+nordvpn-indicator (1.7.1) stable; urgency=low
+
+  * Updated translation: ca
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 25 Aug 2019 08:24:01 +0200
+
+nordvpn-indicator (1.7.0) stable; urgency=low
+
+  * Change xdg autostart variables
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 23 Aug 2019 13:37:57 +0200
+
+nordvpn-indicator (1.6.9) stable; urgency=low
+
+  * Move remaining nordvpn commands to own class
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 20 Aug 2019 20:08:36 +0200
+
+nordvpn-indicator (1.6.8) stable; urgency=low
+
+  * Add manual connecting
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 14 Aug 2019 13:29:00 +0200
+
+nordvpn-indicator (1.6.7) stable; urgency=low
+
+  * Incorporate NordVPN order link
+  * Fix Gtk+ deprecated functions
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 13 Aug 2019 19:50:41 +0200
+
+nordvpn-indicator (1.6.6) stable; urgency=low
+
+  * Let user select NordLynx if possible
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 11 Aug 2019 13:43:01 +0200
+
+nordvpn-indicator (1.6.5) stable; urgency=low
+
+  * Check fastest server if manually connecting
+  * Implement changes for use with WireGuard
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 09 Aug 2019 11:45:58 +0200
+
+nordvpn-indicator (1.6.4) stable; urgency=low
+
+  * Updated translation: lt
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 07 Aug 2019 08:33:00 +0200
+
+nordvpn-indicator (1.6.3) stable; urgency=low
+
+  * Improve check if already started
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 30 Jun 2019 15:47:41 +0200
+
+nordvpn-indicator (1.6.2) stable; urgency=low
+
+  * Updated translations: de, it
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 20 Jun 2019 17:30:17 +0200
+
+nordvpn-indicator (1.6.1) stable; urgency=low
+
+  * Updated translations: ca
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 25 May 2019 19:51:46 +0200
+
+nordvpn-indicator (1.6.0) stable; urgency=low
+
+  * Check for running process for current user only
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 17 May 2019 17:53:51 +0200
+
+nordvpn-indicator (1.5.9) stable; urgency=low
+
+  * Fix settings window
+  * Add view log button to settings window
+  * Set -x flag for /var/log/nordvpn to make logs readable
+  * Set up logrotate for /var/log/nordvpn/daemon.log
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 07 May 2019 08:58:33 +0200
+
+nordvpn-indicator (1.5.8) stable; urgency=low
+
+  * Wait 20sec before xdg autostart runs nordvpn-indicator
+  * nohup process after starting nordvpn-indicator from terminal
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 30 Apr 2019 10:57:07 +0200
+
+nordvpn-indicator (1.5.7) stable; urgency=low
+
+  * Add login window
+  * Save countries list in case there is no connection
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 17 Apr 2019 09:58:03 +0200
+
+nordvpn-indicator (1.5.6) stable; urgency=low
+
+  * Handle logout status
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 11 Apr 2019 07:58:21 +0200
+
+nordvpn-indicator (1.5.5) stable; urgency=low
+
+  * Replaced png icons with flat svg icons
+  * Added grey connecting icon
+  * Thread changing connection to update system tray icon
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 05 Apr 2019 11:59:46 +0200
+
+nordvpn-indicator (1.5.4) stable; urgency=low
+
+  * Added catch for NordVPN non-error 
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 04 Apr 2019 15:56:26 +0200
+
+nordvpn-indicator (1.5.3) stable; urgency=low
+
+  * Resolve bug comparing byte with str
+  * Manually connect to country if country is set in autoconnect setting
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 04 Apr 2019 11:37:41 +0200
+
+nordvpn-indicator (1.5.2) stable; urgency=low
+
+  * Catch return non-error not reaching NordVPN servers
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 31 Mar 2019 14:27:55 +0200
+
+nordvpn-indicator (1.5.1) stable; urgency=low
+
+  * Remove disconnect/connect while saving settings
+  * Simplify splitting countries string
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 29 Mar 2019 10:26:35 +0100
+
+nordvpn-indicator (1.5.0) stable; urgency=low
+
+  * Add settings dialog
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 27 Mar 2019 10:24:58 +0100
+
+nordvpn-indicator (1.0.2) stable; urgency=low
+
+  * Cleanup code
+  * Added translation: lt
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 26 Mar 2019 08:08:33 +0100
+
+nordvpn-indicator (1.0.1) stable; urgency=low
+
+  * Fix bug not (dis)connecting after login
+  * Optimize code
+  * Added translations: de, it, da
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 25 Mar 2019 11:41:55 +0100
+
+nordvpn-indicator (1.0.0) stable; urgency=low
+
+  * Initial version
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 22 Mar 2019 17:56:58 +0100
