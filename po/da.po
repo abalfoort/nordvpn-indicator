@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Arjen Balfoort <arjenbalfoort@solydxk.com>, 2019
-# Tony Albers, 2019
+# Arjen Balfoort <translations@solydxk.com>, 2019
+# Tony Albers, 2020
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-05 18:13+0200\n"
+"POT-Creation-Date: 2020-06-17 09:00+0200\n"
 "PO-Revision-Date: 2019-03-24 09:06+0000\n"
-"Last-Translator: Tony Albers, 2019\n"
+"Last-Translator: Tony Albers, 2020\n"
 "Language-Team: Danish (https://www.transifex.com/solydxk/teams/54212/da/)\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -129,15 +129,15 @@ msgstr "Statusinformation"
 
 #: usr/lib/nordvpn-indicator/main.py:60
 msgid "Rate last connection"
-msgstr ""
+msgstr "Bedøm sidste forbindelses kvalitet"
 
 #: usr/lib/nordvpn-indicator/main.py:61
 msgid "poor"
-msgstr ""
+msgstr "ringe"
 
 #: usr/lib/nordvpn-indicator/main.py:62
 msgid "excellent"
-msgstr ""
+msgstr "udmærket"
 
 #: usr/lib/nordvpn-indicator/main.py:63
 msgid ""
