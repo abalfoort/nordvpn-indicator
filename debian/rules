@@ -84,4 +84,3 @@ update:
 		intltool-merge --quiet --desktop-style ./po $$LAUNCHER.in $$LAUNCHER ; \
 		rm $$LAUNCHER.in.h $$LAUNCHER.in ; \
 	done && echo "Desktop files updated with new translations"
-
