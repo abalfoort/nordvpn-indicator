@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-05 18:13+0200\n"
+"POT-Creation-Date: 2020-09-27 12:20+0200\n"
 "PO-Revision-Date: 2019-03-24 09:06+0000\n"
 "Last-Translator: Luis Filipe Teixeira <lufilte@gmail.com>, 2020\n"
 "Language-Team: Portuguese (https://www.transifex.com/solydxk/teams/54212/"
@@ -22,35 +22,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: usr/lib/nordvpn-indicator/login.py:29
+#: nordvpn-indicator/login.py:29
 msgid "NordVPN Login"
 msgstr "NordVPN Login"
 
-#: usr/lib/nordvpn-indicator/login.py:46
+#: nordvpn-indicator/login.py:46
 msgid "Email"
 msgstr "Email"
 
-#: usr/lib/nordvpn-indicator/login.py:54
+#: nordvpn-indicator/login.py:54
 msgid "Password"
 msgstr "Senha"
 
-#: usr/lib/nordvpn-indicator/login.py:81
+#: nordvpn-indicator/login.py:81
 msgid "Cannot find {}."
 msgstr "Não consigo encontrar {}."
 
-#: usr/lib/nordvpn-indicator/login.py:83
+#: nordvpn-indicator/login.py:83
 msgid "Login/password was not given."
 msgstr "Login/senha não foram introduzidos."
 
-#: usr/lib/nordvpn-indicator/settings.py:32
+#: nordvpn-indicator/connect.py:29
+msgid "NordVPN Connect"
+msgstr "NordVPN Connect"
+
+#: nordvpn-indicator/settings.py:34
 msgid "NordVPN Settings"
 msgstr "NordVPN Definições"
 
-#: usr/lib/nordvpn-indicator/settings.py:51
+#: nordvpn-indicator/settings.py:53
 msgid "Auto Connect"
 msgstr "Conexão Automática"
 
-#: usr/lib/nordvpn-indicator/settings.py:52
+#: nordvpn-indicator/settings.py:54
 msgid ""
 "Automatically connect to NordVPN on login.\n"
 "You can optionally select a country or a recommended server."
@@ -58,11 +62,11 @@ msgstr ""
 "Conectar-se automaticamente ao NordVPN no login.\n"
 "Opcionalmente, pode selecionar um país ou um servidor recomendado."
 
-#: usr/lib/nordvpn-indicator/settings.py:78
+#: nordvpn-indicator/settings.py:80
 msgid "Cyber Security"
 msgstr "Cyber Security"
 
-#: usr/lib/nordvpn-indicator/settings.py:79
+#: nordvpn-indicator/settings.py:81
 msgid ""
 "Automatically block suspicious websites\n"
 "and block advertisements."
@@ -70,11 +74,11 @@ msgstr ""
 "Bloquear automaticamente sítios suspeitos\n"
 "e bloquear anúncios."
 
-#: usr/lib/nordvpn-indicator/settings.py:85
+#: nordvpn-indicator/settings.py:87
 msgid "Kill Switch"
 msgstr "Botão de desligar"
 
-#: usr/lib/nordvpn-indicator/settings.py:86
+#: nordvpn-indicator/settings.py:88
 msgid ""
 "Disable system-wide internet access\n"
 "if the VPN connection suddenly disconnects."
@@ -82,15 +86,15 @@ msgstr ""
 "Desativar acesso à Internet em todo o sistema\n"
 "se a conexão VPN se desconectar repentinamente."
 
-#: usr/lib/nordvpn-indicator/settings.py:92
+#: nordvpn-indicator/settings.py:94
 msgid "Protocol"
 msgstr "Protocolo"
 
-#: usr/lib/nordvpn-indicator/settings.py:105
+#: nordvpn-indicator/settings.py:107
 msgid "NordLynx"
 msgstr "NordLynx"
 
-#: usr/lib/nordvpn-indicator/settings.py:106
+#: nordvpn-indicator/settings.py:108
 msgid ""
 "Use NordLynx instead of OpenVPN.\n"
 "Deselect to use the default OpenVPN."
@@ -98,48 +102,48 @@ msgstr ""
 "Usar NordLynx em vez de OpenVPN.\n"
 "Desmarque para usar o OpenVPN padrão."
 
-#: usr/lib/nordvpn-indicator/settings.py:111
+#: nordvpn-indicator/settings.py:113
 msgid "Logs"
 msgstr "Logs"
 
-#: usr/lib/nordvpn-indicator/settings.py:115
+#: nordvpn-indicator/settings.py:117
 msgid "View Logs"
 msgstr "Ver os Logs"
 
-#: usr/lib/nordvpn-indicator/main.py:50
+#: nordvpn-indicator/__init__.py:51
 msgid "Get a NordVPN account"
 msgstr "Obter uma conta NordVPN"
 
-#: usr/lib/nordvpn-indicator/main.py:52 usr/lib/nordvpn-indicator/main.py:53
-#: usr/lib/nordvpn-indicator/main.py:55 usr/lib/nordvpn-indicator/main.py:56
+#: nordvpn-indicator/__init__.py:53 nordvpn-indicator/__init__.py:54
+#: nordvpn-indicator/__init__.py:56 nordvpn-indicator/__init__.py:57
 msgid "Quick connect"
 msgstr "Conexão rápida"
 
-#: usr/lib/nordvpn-indicator/main.py:54
+#: nordvpn-indicator/__init__.py:55
 msgid "Disconnect"
 msgstr "Desligar"
 
-#: usr/lib/nordvpn-indicator/main.py:58
+#: nordvpn-indicator/__init__.py:59
 msgid "Manual connect"
 msgstr "Conexão manual"
 
-#: usr/lib/nordvpn-indicator/main.py:59
+#: nordvpn-indicator/__init__.py:60
 msgid "Status Information"
 msgstr "Informações de Estado"
 
-#: usr/lib/nordvpn-indicator/main.py:60
+#: nordvpn-indicator/__init__.py:61
 msgid "Rate last connection"
 msgstr "Classifique a última conexão"
 
-#: usr/lib/nordvpn-indicator/main.py:61
+#: nordvpn-indicator/__init__.py:62
 msgid "poor"
 msgstr "pobre"
 
-#: usr/lib/nordvpn-indicator/main.py:62
+#: nordvpn-indicator/__init__.py:63
 msgid "excellent"
 msgstr "excelente"
 
-#: usr/lib/nordvpn-indicator/main.py:63
+#: nordvpn-indicator/__init__.py:64
 msgid ""
 "You are not logged into NordVPN.\n"
 "Please, login with: nordvpn login"
@@ -147,42 +151,37 @@ msgstr ""
 "Não está ligado ao NordVPN.\n"
 "Por favor, faça o login com: nordvpn login"
 
-#: usr/lib/nordvpn-indicator/main.py:75
-#: etc/xdg/autostart/nordvpn-indicator.desktop.in.h:1
+#: nordvpn-indicator/__init__.py:76 data/nordvpn-indicator.desktop.in.h:1
 msgid "NordVPN Indicator"
 msgstr "Indicador de NordVPN"
 
-#: usr/lib/nordvpn-indicator/main.py:169
+#: nordvpn-indicator/__init__.py:170
 msgid "Settings"
 msgstr "Definições"
 
-#: usr/lib/nordvpn-indicator/main.py:173
+#: nordvpn-indicator/__init__.py:174
 msgid "Quit"
 msgstr "Sair"
 
-#: usr/lib/nordvpn-indicator/main.py:290
+#: nordvpn-indicator/__init__.py:291
 msgid "Not logged into NordVPN."
 msgstr "Não está ligado ao NordVPN."
 
-#: usr/lib/nordvpn-indicator/main.py:319
+#: nordvpn-indicator/__init__.py:320
 msgid "If the problem persists, contact NordVPN customer support."
 msgstr ""
 "Se o problema persistir, entre em contacto com o suporte ao cliente NordVPN."
 
-#: usr/lib/nordvpn-indicator/main.py:320
+#: nordvpn-indicator/__init__.py:321
 #, python-brace-format
 msgid "Failed to connect to \"{0}\""
 msgstr "Falha ao conectar-se a \"{0}\""
 
-#: usr/lib/nordvpn-indicator/main.py:320
+#: nordvpn-indicator/__init__.py:321
 #, python-brace-format
 msgid "Failed to disconnect from \"{0}\""
 msgstr "Falha ao desconectar de \"{0}\""
 
-#: usr/lib/nordvpn-indicator/connect.py:27
-msgid "NordVPN Connect"
-msgstr "NordVPN Connect"
-
-#: etc/xdg/autostart/nordvpn-indicator.desktop.in.h:2
+#: data/nordvpn-indicator.desktop.in.h:2
 msgid "Systemtray icon for the NordVPN application"
 msgstr "Ícone bandeja do sistema para a aplicação NordVPN"
