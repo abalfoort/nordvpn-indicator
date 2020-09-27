@@ -1,0 +1,10 @@
+__title__ = 'nordvpn-indicator'
+__version__ = '1.8.8'
+__author__ = 'Arjen Balfoort'
+__author_email__ = 'arjenbalfoort@solydxk.com'
+__maintainer__ = ''
+__maintainer_email__ = ''
+__url__ = 'https://gitlab.com/abalfoort/nordvpn-indicator'
+__description__ = 'Systemtray icon for the NordVPN application'
+__download_url__ = 'https://gitlab.com/abalfoort/nordvpn-indicator/-/archive/master/nordvpn-indicator-master.tar.gz'
+

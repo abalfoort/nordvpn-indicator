@@ -6,7 +6,9 @@ import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 from os.path import abspath, dirname, join
-from nordvpn import get_countries, get_recommended_servers, \
+
+# Local modules
+from .nordvpn import get_countries, get_recommended_servers, \
                     get_recommended_country
 
 # i18n: http://docs.python.org/3/library/gettext.html

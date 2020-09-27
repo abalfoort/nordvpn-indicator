@@ -23,17 +23,16 @@ desktopfls := $(shell find . -wholename ./debian -prune -o -name '*.desktop' -pr
 	msgfmt $< -o ./po/mo/$(basename $(notdir $<))/LC_MESSAGES/$(source).mo
 
 %:
-	dh $@ --with=python3
+	dh $@ --with=python3 --buildsystem=pybuild
 
 override_dh_auto_clean:
+	sed -i "s/^\(__version__\s*=\s*\).*\$$/\1'$(shell dpkg-parsechangelog -S Version)'/" version.py
 	# Cleanup first
-	find ./usr -type d -name "*__pycache__" -exec rm -r "{}" \;
-	find ./usr -type f -name "*.pyc" -delete
-	find ./usr -type f -name "*.*~" -delete
 	rm -rf ./po/mo
 	mkdir ./po/mo
 
 override_dh_auto_install: update $(patsubst %.po,%.mo,$(wildcard ./po/*.po))
+	dh_auto_install
 
 override_dh_builddeb:
 	dh_builddeb

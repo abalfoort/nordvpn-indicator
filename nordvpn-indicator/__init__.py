@@ -23,10 +23,12 @@ from os.path import abspath, dirname, join, exists
 from pathlib import Path
 import re
 from os import makedirs
-from login import NordVPNLogin
-from connect import NordVPNConnect
-from settings import NordVPNSettings
-from nordvpn import is_loggedin, is_connected, get_fastest_server, \
+
+# Local modules
+from .login import NordVPNLogin
+from .connect import NordVPNConnect
+from .settings import NordVPNSettings
+from .nordvpn import is_loggedin, is_connected, get_fastest_server, \
                     has_account, load_order_page, get_account_info, \
                     get_status_info, get_connection_status, \
                     nordvpn_connect, nordvpn_disconnect, rate_connection
@@ -35,7 +37,6 @@ from nordvpn import is_loggedin, is_connected, get_fastest_server, \
 import gettext
 from gettext import gettext as _
 gettext.textdomain(APPINDICATOR_ID)
-
 
 
 class NordVPNIndicator():
@@ -328,7 +329,10 @@ class NordVPNIndicator():
         Notify.uninit()
         Gtk.main_quit()
 
-if __name__ == "__main__":
+def main():
     NordVPNIndicator()
     signal.signal(signal.SIGINT, signal.SIG_DFL)
     Gtk.main()
+    
+if __name__ == '__main__':
+    main()

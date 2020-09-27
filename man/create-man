@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pandoc -s -t man nordvpn-indicator.1.md -o nordvpn-indicator.1

@@ -17,10 +17,11 @@ if ! pgrep -u $USER -f python3.*nordvpn-indicator &>/dev/null; then
     # Use file as tty output
     # Launch with all passed arguments (future reserved)
     if $DEBUG; then
-        $PYTHON -Wd /usr/lib/nordvpn-indicator/main.py $@
+        # Use importlib to import a module with a hyphen in its name
+        $PYTHON -Wd -c "import importlib; ni = importlib.import_module('nordvpn-indicator'); ni.main() $@"
     else
         LOG="$NVPNDIR/indicator.log"
-        nohup $PYTHON -OO /usr/lib/nordvpn-indicator/main.py $@ &> $LOG  &
+        nohup $PYTHON -OO -c "import importlib; ni = importlib.import_module('nordvpn-indicator'); ni.main() $@" &> $LOG  &
         echo "Output written to $LOG"
         echo "You can now close the terminal."
     fi

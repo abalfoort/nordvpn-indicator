@@ -1,8 +1,0 @@
-/var/log/nordvpn/daemon.log {
-        weekly
-        copytruncate
-        rotate 4
-        compress
-        missingok
-        notifempty
-} 

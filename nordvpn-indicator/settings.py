@@ -8,7 +8,9 @@ from gi.repository import Gtk
 from os.path import abspath, dirname, join, exists
 from os import remove
 import subprocess
-from nordvpn import get_countries, get_recommended_servers, \
+
+# Local modules
+from .nordvpn import get_countries, get_recommended_servers, \
                     is_wireguard_installed, uses_nordlynx, \
                     get_fastest_server, conf_path
 

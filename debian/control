@@ -3,14 +3,17 @@ Section: web
 Priority: optional
 Maintainer: Arjen Balfoort <arjenbalfoort@solydxk.com>
 Build-Depends: debhelper-compat (= 12)
-  , python3 (>= 3.2)
+  , dh-python
+  , python3-all
   , transifex-client
   , translate-toolkit
-  , dh-python
 Standards-Version: 4.5.0
+Vcs-Git: https://gitlab.com/abalfoort/nordvpn-indicator.git
+X-Python3-Version: >= 3.6
 
 Package: nordvpn-indicator
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}, ${python3:Depends}
   , nordvpn (>= 3.3.0)
   , gir1.2-gtk-3.0
