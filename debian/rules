@@ -13,8 +13,8 @@ export DH_OPTIONS
 .PHONY: update
 
 source := $(shell dpkg-parsechangelog -S Source)
-pyfiles := $(shell find . -wholename ./debian -prune -o -name '*.py' -print 2>/dev/null)
-desktopfls := $(shell find . -wholename ./debian -prune -o -name '*.desktop' -print 2>/dev/null)
+pyfiles := $(shell find ./nordvpn-indicator -name '*.py' -print 2>/dev/null)
+desktopfls := $(shell find ./data -name '*.desktop' -print 2>/dev/null)
 
 # Create mo from the po files
 # https://www.gnu.org/software/make/manual/make.html#Pattern-Rules
