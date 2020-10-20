@@ -26,6 +26,7 @@ desktopfls := $(shell find ./data -name '*.desktop' -print 2>/dev/null)
 	dh $@ --with=python3 --buildsystem=pybuild
 
 override_dh_auto_clean:
+	# Save new version in version.py
 	sed -i "s/^\(__version__\s*=\s*\).*\$$/\1'$(shell dpkg-parsechangelog -S Version)'/" version.py
 	# Cleanup first
 	rm -rf ./po/mo
