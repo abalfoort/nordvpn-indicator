@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-27 12:20+0200\n"
+"POT-Creation-Date: 2020-10-20 15:19+0200\n"
 "PO-Revision-Date: 2019-03-24 09:06+0000\n"
 "Last-Translator: Moo, 2020\n"
 "Language-Team: Lithuanian (https://www.transifex.com/solydxk/teams/54212/"
@@ -24,29 +24,77 @@ msgstr ""
 "11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
 "1 : n % 1 != 0 ? 2: 3);\n"
 
-#: nordvpn-indicator/login.py:29
-msgid "NordVPN Login"
-msgstr "NordVPN prisijungimas"
+#: nordvpn-indicator/__init__.py:51
+msgid "Get a NordVPN account"
+msgstr "Gauti NordVPN paskyrą"
 
-#: nordvpn-indicator/login.py:46
-msgid "Email"
-msgstr "El. paštas"
+#: nordvpn-indicator/__init__.py:53 nordvpn-indicator/__init__.py:54
+#: nordvpn-indicator/__init__.py:56 nordvpn-indicator/__init__.py:57
+msgid "Quick connect"
+msgstr "Greitas prisijungimas"
 
-#: nordvpn-indicator/login.py:54
-msgid "Password"
-msgstr "Slaptažodis"
+#: nordvpn-indicator/__init__.py:55
+msgid "Disconnect"
+msgstr "Atsijungti"
 
-#: nordvpn-indicator/login.py:81
-msgid "Cannot find {}."
-msgstr "Nepavyksta rasti {}."
+#: nordvpn-indicator/__init__.py:59
+msgid "Manual connect"
+msgstr "Rankinis prisijungimas"
 
-#: nordvpn-indicator/login.py:83
-msgid "Login/password was not given."
-msgstr "Nenurodytas prisijungimas/slaptažodis."
+#: nordvpn-indicator/__init__.py:60
+msgid "Status Information"
+msgstr "Būsenos informacija"
 
-#: nordvpn-indicator/connect.py:29
-msgid "NordVPN Connect"
-msgstr "NordVPN prisijungimas"
+#: nordvpn-indicator/__init__.py:61
+msgid "Rate last connection"
+msgstr "Įvertinti paskutinį ryšį"
+
+#: nordvpn-indicator/__init__.py:62
+msgid "poor"
+msgstr "blogas"
+
+#: nordvpn-indicator/__init__.py:63
+msgid "excellent"
+msgstr "puikus"
+
+#: nordvpn-indicator/__init__.py:64
+msgid ""
+"You are not logged into NordVPN.\n"
+"Please, login with: nordvpn login"
+msgstr ""
+"Nesate prisijungę į NordVPN.\n"
+"Prisijunkite, naudodami: nordvpn login"
+
+#: nordvpn-indicator/__init__.py:76 data/nordvpn-indicator.desktop.in.h:1
+msgid "NordVPN Indicator"
+msgstr "NordVPN indikatorius"
+
+#: nordvpn-indicator/__init__.py:170
+msgid "Settings"
+msgstr "Nustatymai"
+
+#: nordvpn-indicator/__init__.py:174
+msgid "Quit"
+msgstr "Išeiti"
+
+#: nordvpn-indicator/__init__.py:291
+msgid "Not logged into NordVPN."
+msgstr "Neprisijungta prie NordVPN."
+
+#: nordvpn-indicator/__init__.py:323
+msgid "If the problem persists, contact NordVPN customer support."
+msgstr ""
+"Jei problema išlieka, susisiekite su NordVPN klientų aptarnavimo skyriumi."
+
+#: nordvpn-indicator/__init__.py:324
+#, python-brace-format
+msgid "Failed to connect to \"{0}\""
+msgstr "Nepavyko prisijungti prie \"{0}\""
+
+#: nordvpn-indicator/__init__.py:324
+#, python-brace-format
+msgid "Failed to disconnect from \"{0}\""
+msgstr "Nepavyko atsijungti nuo \"{0}\""
 
 #: nordvpn-indicator/settings.py:34
 msgid "NordVPN Settings"
@@ -112,77 +160,29 @@ msgstr "Žurnalai"
 msgid "View Logs"
 msgstr "Žiūrėti žurnalus"
 
-#: nordvpn-indicator/__init__.py:51
-msgid "Get a NordVPN account"
-msgstr "Gauti NordVPN paskyrą"
+#: nordvpn-indicator/login.py:29
+msgid "NordVPN Login"
+msgstr "NordVPN prisijungimas"
 
-#: nordvpn-indicator/__init__.py:53 nordvpn-indicator/__init__.py:54
-#: nordvpn-indicator/__init__.py:56 nordvpn-indicator/__init__.py:57
-msgid "Quick connect"
-msgstr "Greitas prisijungimas"
+#: nordvpn-indicator/login.py:46
+msgid "Email"
+msgstr "El. paštas"
 
-#: nordvpn-indicator/__init__.py:55
-msgid "Disconnect"
-msgstr "Atsijungti"
+#: nordvpn-indicator/login.py:54
+msgid "Password"
+msgstr "Slaptažodis"
 
-#: nordvpn-indicator/__init__.py:59
-msgid "Manual connect"
-msgstr "Rankinis prisijungimas"
+#: nordvpn-indicator/login.py:81
+msgid "Cannot find {}."
+msgstr "Nepavyksta rasti {}."
 
-#: nordvpn-indicator/__init__.py:60
-msgid "Status Information"
-msgstr "Būsenos informacija"
+#: nordvpn-indicator/login.py:83
+msgid "Login/password was not given."
+msgstr "Nenurodytas prisijungimas/slaptažodis."
 
-#: nordvpn-indicator/__init__.py:61
-msgid "Rate last connection"
-msgstr "Įvertinti paskutinį ryšį"
-
-#: nordvpn-indicator/__init__.py:62
-msgid "poor"
-msgstr "blogas"
-
-#: nordvpn-indicator/__init__.py:63
-msgid "excellent"
-msgstr "puikus"
-
-#: nordvpn-indicator/__init__.py:64
-msgid ""
-"You are not logged into NordVPN.\n"
-"Please, login with: nordvpn login"
-msgstr ""
-"Nesate prisijungę į NordVPN.\n"
-"Prisijunkite, naudodami: nordvpn login"
-
-#: nordvpn-indicator/__init__.py:76 data/nordvpn-indicator.desktop.in.h:1
-msgid "NordVPN Indicator"
-msgstr "NordVPN indikatorius"
-
-#: nordvpn-indicator/__init__.py:170
-msgid "Settings"
-msgstr "Nustatymai"
-
-#: nordvpn-indicator/__init__.py:174
-msgid "Quit"
-msgstr "Išeiti"
-
-#: nordvpn-indicator/__init__.py:291
-msgid "Not logged into NordVPN."
-msgstr "Neprisijungta prie NordVPN."
-
-#: nordvpn-indicator/__init__.py:320
-msgid "If the problem persists, contact NordVPN customer support."
-msgstr ""
-"Jei problema išlieka, susisiekite su NordVPN klientų aptarnavimo skyriumi."
-
-#: nordvpn-indicator/__init__.py:321
-#, python-brace-format
-msgid "Failed to connect to \"{0}\""
-msgstr "Nepavyko prisijungti prie \"{0}\""
-
-#: nordvpn-indicator/__init__.py:321
-#, python-brace-format
-msgid "Failed to disconnect from \"{0}\""
-msgstr "Nepavyko atsijungti nuo \"{0}\""
+#: nordvpn-indicator/connect.py:29
+msgid "NordVPN Connect"
+msgstr "NordVPN prisijungimas"
 
 #: data/nordvpn-indicator.desktop.in.h:2
 msgid "Systemtray icon for the NordVPN application"

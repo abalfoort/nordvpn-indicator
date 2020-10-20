@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-27 12:20+0200\n"
+"POT-Creation-Date: 2020-10-20 15:19+0200\n"
 "PO-Revision-Date: 2019-03-24 09:06+0000\n"
 "Last-Translator: Tony Albers, 2020\n"
 "Language-Team: Danish (https://www.transifex.com/solydxk/teams/54212/da/)\n"
@@ -22,29 +22,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: nordvpn-indicator/login.py:29
-msgid "NordVPN Login"
-msgstr "NordVPN Login"
+#: nordvpn-indicator/__init__.py:51
+msgid "Get a NordVPN account"
+msgstr "Opret en konto hos NordVPN"
 
-#: nordvpn-indicator/login.py:46
-msgid "Email"
-msgstr "E-mail"
+#: nordvpn-indicator/__init__.py:53 nordvpn-indicator/__init__.py:54
+#: nordvpn-indicator/__init__.py:56 nordvpn-indicator/__init__.py:57
+msgid "Quick connect"
+msgstr "Forbind øjeblikkeligt"
 
-#: nordvpn-indicator/login.py:54
-msgid "Password"
-msgstr "Adgangskode"
+#: nordvpn-indicator/__init__.py:55
+msgid "Disconnect"
+msgstr "Afbryd forbindelsen"
 
-#: nordvpn-indicator/login.py:81
-msgid "Cannot find {}."
-msgstr "Kan ikke finde {}."
+#: nordvpn-indicator/__init__.py:59
+msgid "Manual connect"
+msgstr "Tilret indstillinger og forbind"
 
-#: nordvpn-indicator/login.py:83
-msgid "Login/password was not given."
-msgstr "Login/adgangskode blev ikke angivet."
+#: nordvpn-indicator/__init__.py:60
+msgid "Status Information"
+msgstr "Statusinformation"
 
-#: nordvpn-indicator/connect.py:29
-msgid "NordVPN Connect"
-msgstr "NordVPN Connect"
+#: nordvpn-indicator/__init__.py:61
+msgid "Rate last connection"
+msgstr "Bedøm sidste forbindelses kvalitet"
+
+#: nordvpn-indicator/__init__.py:62
+msgid "poor"
+msgstr "ringe"
+
+#: nordvpn-indicator/__init__.py:63
+msgid "excellent"
+msgstr "udmærket"
+
+#: nordvpn-indicator/__init__.py:64
+msgid ""
+"You are not logged into NordVPN.\n"
+"Please, login with: nordvpn login"
+msgstr ""
+"Du er ikke logget på NordVPN.\n"
+"Log venligst på med: nordvpn login"
+
+#: nordvpn-indicator/__init__.py:76 data/nordvpn-indicator.desktop.in.h:1
+msgid "NordVPN Indicator"
+msgstr "NordVPN Statusindikator"
+
+#: nordvpn-indicator/__init__.py:170
+msgid "Settings"
+msgstr "Indstillinger"
+
+#: nordvpn-indicator/__init__.py:174
+msgid "Quit"
+msgstr "Afslut"
+
+#: nordvpn-indicator/__init__.py:291
+msgid "Not logged into NordVPN."
+msgstr "Ikke logget ind på NordVPN"
+
+#: nordvpn-indicator/__init__.py:323
+msgid "If the problem persists, contact NordVPN customer support."
+msgstr "Hvis fejlen ikke ophører, kontakt da venligst NordVPNs kundeservice."
+
+#: nordvpn-indicator/__init__.py:324
+#, python-brace-format
+msgid "Failed to connect to \"{0}\""
+msgstr "Kunne ikke forbinde til \"{0}\""
+
+#: nordvpn-indicator/__init__.py:324
+#, python-brace-format
+msgid "Failed to disconnect from \"{0}\""
+msgstr "Kunne ikke afbryde forbindelsen til \"{0}\""
 
 #: nordvpn-indicator/settings.py:34
 msgid "NordVPN Settings"
@@ -110,76 +157,29 @@ msgstr "Log"
 msgid "View Logs"
 msgstr "Se log"
 
-#: nordvpn-indicator/__init__.py:51
-msgid "Get a NordVPN account"
-msgstr "Opret en konto hos NordVPN"
+#: nordvpn-indicator/login.py:29
+msgid "NordVPN Login"
+msgstr "NordVPN Login"
 
-#: nordvpn-indicator/__init__.py:53 nordvpn-indicator/__init__.py:54
-#: nordvpn-indicator/__init__.py:56 nordvpn-indicator/__init__.py:57
-msgid "Quick connect"
-msgstr "Forbind øjeblikkeligt"
+#: nordvpn-indicator/login.py:46
+msgid "Email"
+msgstr "E-mail"
 
-#: nordvpn-indicator/__init__.py:55
-msgid "Disconnect"
-msgstr "Afbryd forbindelsen"
+#: nordvpn-indicator/login.py:54
+msgid "Password"
+msgstr "Adgangskode"
 
-#: nordvpn-indicator/__init__.py:59
-msgid "Manual connect"
-msgstr "Tilret indstillinger og forbind"
+#: nordvpn-indicator/login.py:81
+msgid "Cannot find {}."
+msgstr "Kan ikke finde {}."
 
-#: nordvpn-indicator/__init__.py:60
-msgid "Status Information"
-msgstr "Statusinformation"
+#: nordvpn-indicator/login.py:83
+msgid "Login/password was not given."
+msgstr "Login/adgangskode blev ikke angivet."
 
-#: nordvpn-indicator/__init__.py:61
-msgid "Rate last connection"
-msgstr "Bedøm sidste forbindelses kvalitet"
-
-#: nordvpn-indicator/__init__.py:62
-msgid "poor"
-msgstr "ringe"
-
-#: nordvpn-indicator/__init__.py:63
-msgid "excellent"
-msgstr "udmærket"
-
-#: nordvpn-indicator/__init__.py:64
-msgid ""
-"You are not logged into NordVPN.\n"
-"Please, login with: nordvpn login"
-msgstr ""
-"Du er ikke logget på NordVPN.\n"
-"Log venligst på med: nordvpn login"
-
-#: nordvpn-indicator/__init__.py:76 data/nordvpn-indicator.desktop.in.h:1
-msgid "NordVPN Indicator"
-msgstr "NordVPN Statusindikator"
-
-#: nordvpn-indicator/__init__.py:170
-msgid "Settings"
-msgstr "Indstillinger"
-
-#: nordvpn-indicator/__init__.py:174
-msgid "Quit"
-msgstr "Afslut"
-
-#: nordvpn-indicator/__init__.py:291
-msgid "Not logged into NordVPN."
-msgstr "Ikke logget ind på NordVPN"
-
-#: nordvpn-indicator/__init__.py:320
-msgid "If the problem persists, contact NordVPN customer support."
-msgstr "Hvis fejlen ikke ophører, kontakt da venligst NordVPNs kundeservice."
-
-#: nordvpn-indicator/__init__.py:321
-#, python-brace-format
-msgid "Failed to connect to \"{0}\""
-msgstr "Kunne ikke forbinde til \"{0}\""
-
-#: nordvpn-indicator/__init__.py:321
-#, python-brace-format
-msgid "Failed to disconnect from \"{0}\""
-msgstr "Kunne ikke afbryde forbindelsen til \"{0}\""
+#: nordvpn-indicator/connect.py:29
+msgid "NordVPN Connect"
+msgstr "NordVPN Connect"
 
 #: data/nordvpn-indicator.desktop.in.h:2
 msgid "Systemtray icon for the NordVPN application"

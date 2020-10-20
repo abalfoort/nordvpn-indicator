@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-27 12:20+0200\n"
+"POT-Creation-Date: 2020-10-20 15:19+0200\n"
 "PO-Revision-Date: 2019-03-24 09:06+0000\n"
 "Last-Translator: Eduard Selma <selma@tinet.cat>, 2019\n"
 "Language-Team: Catalan (https://www.transifex.com/solydxk/teams/54212/ca/)\n"
@@ -22,29 +22,78 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: nordvpn-indicator/login.py:29
-msgid "NordVPN Login"
-msgstr "Inici de sessió a NordVPN"
+#: nordvpn-indicator/__init__.py:51
+msgid "Get a NordVPN account"
+msgstr "Creeu un compte NordVPN "
 
-#: nordvpn-indicator/login.py:46
-msgid "Email"
-msgstr "Correu-e"
+#: nordvpn-indicator/__init__.py:53 nordvpn-indicator/__init__.py:54
+#: nordvpn-indicator/__init__.py:56 nordvpn-indicator/__init__.py:57
+msgid "Quick connect"
+msgstr "Connexió ràpida"
 
-#: nordvpn-indicator/login.py:54
-msgid "Password"
-msgstr "Contrasenya"
+#: nordvpn-indicator/__init__.py:55
+msgid "Disconnect"
+msgstr "Desconnecta"
 
-#: nordvpn-indicator/login.py:81
-msgid "Cannot find {}."
-msgstr "No trobo {}."
+#: nordvpn-indicator/__init__.py:59
+msgid "Manual connect"
+msgstr "Connexió manual"
 
-#: nordvpn-indicator/login.py:83
-msgid "Login/password was not given."
-msgstr "No s'ha donat nom d'usuari ni contrasenya."
+#: nordvpn-indicator/__init__.py:60
+msgid "Status Information"
+msgstr "Informació d'estat"
 
-#: nordvpn-indicator/connect.py:29
-msgid "NordVPN Connect"
-msgstr "Connecta NordVPN"
+#: nordvpn-indicator/__init__.py:61
+msgid "Rate last connection"
+msgstr ""
+
+#: nordvpn-indicator/__init__.py:62
+msgid "poor"
+msgstr ""
+
+#: nordvpn-indicator/__init__.py:63
+msgid "excellent"
+msgstr ""
+
+#: nordvpn-indicator/__init__.py:64
+msgid ""
+"You are not logged into NordVPN.\n"
+"Please, login with: nordvpn login"
+msgstr ""
+"No esteu connectats a NordVPN.\n"
+"Si us plau, entreu amb: nordvpn login"
+
+#: nordvpn-indicator/__init__.py:76 data/nordvpn-indicator.desktop.in.h:1
+msgid "NordVPN Indicator"
+msgstr "Indicador de NordVPN"
+
+#: nordvpn-indicator/__init__.py:170
+msgid "Settings"
+msgstr "Paràmetres"
+
+#: nordvpn-indicator/__init__.py:174
+msgid "Quit"
+msgstr "Surt"
+
+#: nordvpn-indicator/__init__.py:291
+msgid "Not logged into NordVPN."
+msgstr "No esteu registrat a NordVPN."
+
+#: nordvpn-indicator/__init__.py:323
+msgid "If the problem persists, contact NordVPN customer support."
+msgstr ""
+"Si el problema continua, poseu-vos en contacte amb el servei d'assistència "
+"al client de NordVPN."
+
+#: nordvpn-indicator/__init__.py:324
+#, python-brace-format
+msgid "Failed to connect to \"{0}\""
+msgstr "No he pogut connectar a \"{0}\""
+
+#: nordvpn-indicator/__init__.py:324
+#, python-brace-format
+msgid "Failed to disconnect from \"{0}\""
+msgstr "No he pogut desconnectar de \"{0}\""
 
 #: nordvpn-indicator/settings.py:34
 msgid "NordVPN Settings"
@@ -110,78 +159,29 @@ msgstr "Registres"
 msgid "View Logs"
 msgstr "Veure els registres"
 
-#: nordvpn-indicator/__init__.py:51
-msgid "Get a NordVPN account"
-msgstr "Creeu un compte NordVPN "
+#: nordvpn-indicator/login.py:29
+msgid "NordVPN Login"
+msgstr "Inici de sessió a NordVPN"
 
-#: nordvpn-indicator/__init__.py:53 nordvpn-indicator/__init__.py:54
-#: nordvpn-indicator/__init__.py:56 nordvpn-indicator/__init__.py:57
-msgid "Quick connect"
-msgstr "Connexió ràpida"
+#: nordvpn-indicator/login.py:46
+msgid "Email"
+msgstr "Correu-e"
 
-#: nordvpn-indicator/__init__.py:55
-msgid "Disconnect"
-msgstr "Desconnecta"
+#: nordvpn-indicator/login.py:54
+msgid "Password"
+msgstr "Contrasenya"
 
-#: nordvpn-indicator/__init__.py:59
-msgid "Manual connect"
-msgstr "Connexió manual"
+#: nordvpn-indicator/login.py:81
+msgid "Cannot find {}."
+msgstr "No trobo {}."
 
-#: nordvpn-indicator/__init__.py:60
-msgid "Status Information"
-msgstr "Informació d'estat"
+#: nordvpn-indicator/login.py:83
+msgid "Login/password was not given."
+msgstr "No s'ha donat nom d'usuari ni contrasenya."
 
-#: nordvpn-indicator/__init__.py:61
-msgid "Rate last connection"
-msgstr ""
-
-#: nordvpn-indicator/__init__.py:62
-msgid "poor"
-msgstr ""
-
-#: nordvpn-indicator/__init__.py:63
-msgid "excellent"
-msgstr ""
-
-#: nordvpn-indicator/__init__.py:64
-msgid ""
-"You are not logged into NordVPN.\n"
-"Please, login with: nordvpn login"
-msgstr ""
-"No esteu connectats a NordVPN.\n"
-"Si us plau, entreu amb: nordvpn login"
-
-#: nordvpn-indicator/__init__.py:76 data/nordvpn-indicator.desktop.in.h:1
-msgid "NordVPN Indicator"
-msgstr "Indicador de NordVPN"
-
-#: nordvpn-indicator/__init__.py:170
-msgid "Settings"
-msgstr "Paràmetres"
-
-#: nordvpn-indicator/__init__.py:174
-msgid "Quit"
-msgstr "Surt"
-
-#: nordvpn-indicator/__init__.py:291
-msgid "Not logged into NordVPN."
-msgstr "No esteu registrat a NordVPN."
-
-#: nordvpn-indicator/__init__.py:320
-msgid "If the problem persists, contact NordVPN customer support."
-msgstr ""
-"Si el problema continua, poseu-vos en contacte amb el servei d'assistència "
-"al client de NordVPN."
-
-#: nordvpn-indicator/__init__.py:321
-#, python-brace-format
-msgid "Failed to connect to \"{0}\""
-msgstr "No he pogut connectar a \"{0}\""
-
-#: nordvpn-indicator/__init__.py:321
-#, python-brace-format
-msgid "Failed to disconnect from \"{0}\""
-msgstr "No he pogut desconnectar de \"{0}\""
+#: nordvpn-indicator/connect.py:29
+msgid "NordVPN Connect"
+msgstr "Connecta NordVPN"
 
 #: data/nordvpn-indicator.desktop.in.h:2
 msgid "Systemtray icon for the NordVPN application"
