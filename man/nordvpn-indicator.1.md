@@ -13,7 +13,7 @@ nordvpn-indicator - Linux system tray icon for nordvpn
 
 # SYNOPSIS
 
-| **nordvpn-indicator** \[**-d**|**--debug**]
+**nordvpn-indicator** \[**-d**|**--debug**]
 
 # DESCRIPTION
 
@@ -31,25 +31,27 @@ Right-click to open the menu:
  3. Show status information.
  4. Value the last used connection.
 
-# Options
-
 -d, --debug
-
 :   Prints debug information.
 
 
 # FILES
 
-*~/.config/nordvpn/indicator.log
-
+~/.config/nordvpn/indicator.log
 :   Per-user log file.
 
-*/.config/nordvpn/has_account
-
+~/.config/nordvpn/has_account
 :   Indicator file to flag that the user has an account.
+
+~/.config/nordvpn/indicator.conf
+:   Optional configuration file.
+
+# Author
+
+Written by Arjen Balfoort
 
 # BUGS
 
-See GitLab Issues: https://gitlab.com/abalfoort/nordvpn-indicator/-/issues
+https://gitlab.com/abalfoort/nordvpn-indicator/-/issues
 
 
