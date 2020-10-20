@@ -210,11 +210,10 @@ def get_recommended_servers(country_code=-1):
     if country_code > -1:
         filter = '?filters\[country_id\]={0}'.format(country_code)
     # Get recommended servers
-    # First recommended server: curl --silent https://api.nordvpn.com/v1/servers/recommendations | jq --raw-output 'first | .hostname'
     if needs_nordlynx():
-        command = "LANG=C curl --silent \"https://api.nordvpn.com/v1/servers/recommendations{0}\" | jq --raw-output '.[] | select(.technologies[].identifier == \"wireguard_udp\") | .hostname' 2>/dev/null | head -n 10".format(filter)
+        command = "LANG=C curl -s 'https://api.nordvpn.com/v1/servers/recommendations{filter}' | jq --raw-output 'limit(10;.[]) | select(.load > 0) | select(.technologies[].identifier == \"wireguard_udp\") | .hostname' 2>/dev/null".format(filter=filter)
     else:
-        command = "LANG=C curl --silent \"https://api.nordvpn.com/v1/servers/recommendations{0}\" | jq --raw-output 'limit(10;.[]) | .hostname' 2>/dev/null".format(filter)
+        command = "LANG=C curl -s 'https://api.nordvpn.com/v1/servers/recommendations{filter}' | jq --raw-output 'limit(10;.[]) | select(.load > 0) | .hostname' 2>/dev/null".format(filter=filter)
     print(('get_recommended_servers - public NordVPN API command: {0}'.format(command)))
     output = subprocess.check_output(command, shell=True, timeout=5).decode('utf-8').strip()
     # Init servers list
@@ -227,18 +226,21 @@ def get_recommended_servers(country_code=-1):
     
 def load_order_page():
     """
-    Get order page URL from nordvpn-indicator.conf
-    Check for ORDER_{DISTRIB_ID} variable
+    Get order page URL from ~/.config/nordvpn/indicator.conf
+    Check for ORDER_LINK variable
     Then load order page in default browser
     """
     return_code = 1
     try:
         distro = get_distrib_id().upper()
-        config = get_config_dict(join(script_dir, 'nordvpn-indicator.conf'))
-        order_url = config.get('ORDER_{0}'.format(distro), '')
-        # Get default order URL if no distro specific URL is available
+        order_conf = join(conf_path, 'indicator.conf')
+        config = get_config_dict(order_conf)
+        order_url = config.get('ORDER_LINK', '')
+        # If no order url was configured, save default in order_conf
         if not order_url:
-            order_url = config.get('ORDER_DEFAULT'.format(distro), '')
+            order_url = 'https://join.nordvpn.com/order/'
+            with open(order_conf, 'w') as f:
+                f.write('ORDER_LINK="{}"'.format(order_url))
         # Open url in browser
         if order_url:
             return_code = subprocess.call(['xdg-open', '{0}'.format(order_url)])
