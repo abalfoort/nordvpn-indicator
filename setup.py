@@ -17,13 +17,6 @@ DATA_FILES=[
     ('/etc/logrotate.d', ['data/nordvpn'])
 ]
 
-# Add translation files
-for mo_posixpath in pathlib.Path('po/mo').rglob('*.mo'):
-    mo = str(mo_posixpath)
-    ind_start = mo.find('/mo/') + 4
-    ind_end = mo.find('/LC_')
-    DATA_FILES.append(("share/locale/%s/LC_MESSAGES" % mo[ind_start:ind_end], [mo]))
-
 # Load the package's version.py module as a dictionary.
 about = {}
 here = pathlib.Path(__file__).parent.resolve()
