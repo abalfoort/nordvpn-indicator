@@ -257,7 +257,7 @@ class NordVPNIndicator():
         """
         Quick connect.
         """
-        self.change_connection()
+        self.change_connection(quick=True)
     
     def manual_connect(self, widget):
         """
@@ -265,7 +265,7 @@ class NordVPNIndicator():
         """
         country, server = NordVPNConnect().show_connect()
         if country or server:
-            self.change_connection(country=country, server=server, connect=None)
+            self.change_connection(country=country, server=server)
         
     def show_order_page(self, widget=None):
         """
@@ -273,7 +273,7 @@ class NordVPNIndicator():
         """
         load_order_page()
 
-    def change_connection(self, country=None, server=None, connect=None):
+    def change_connection(self, country=None, server=None, connect=None, quick=False):
         """
         Start connection change in a thread
         Login when needed
@@ -285,7 +285,7 @@ class NordVPNIndicator():
 
         if return_code == 0:
             # Start this threaded or else the system tray icon does not change
-            Thread(target=self.run_change_connection, kwargs={'country': country,'server': server, 'connect': connect}).start()
+            Thread(target=self.run_change_connection, kwargs={'country': country,'server': server, 'connect': connect, 'quick': quick}).start()
         else:
             # Failed to login
             title = _('Not logged into NordVPN.')
@@ -293,7 +293,7 @@ class NordVPNIndicator():
             print(('----------- change_connection -----------'))
             print(last_line)
             
-    def run_change_connection(self, country=None, server=None, connect=None):
+    def run_change_connection(self, country=None, server=None, connect=None, quick=False):
         """
         Switches connection:
         Disconnect when connected and vise versa.
@@ -302,14 +302,17 @@ class NordVPNIndicator():
         if connect is None: connect = not is_connected()
 
         # Connect to country/server or disconnect
-        if not country:
-            country = self.current_settings['country']
-        if not server:
-            server = self.current_settings['server']
-        connect_obj = server if server else country
-        if not connect_obj:
-            # Get fastest server to connect to
-            connect_obj = get_fastest_server()
+        connect_obj = ''
+        if not quick and connect:
+            if not country:
+                country = self.current_settings['country']
+            if not server:
+                server = self.current_settings['server']
+            connect_obj = server if server else country
+            if not connect_obj:
+                # Get fastest server to connect to
+                connect_obj = get_fastest_server()
+
         if connect:
             return_code, output = nordvpn_connect(connect_obj)
         else:
