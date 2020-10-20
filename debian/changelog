@@ -1,3 +1,17 @@
+nordvpn-indicator (1.9.0) stable; urgency=low
+
+  * Let nordvpn handle quick connect
+  * Select servers that have a load > 0
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 19 Oct 2020 23:10:45 +0200
+
+nordvpn-indicator (1.8.9) stable; urgency=low
+
+  * Move data files installation from setup.py to nordvpn-indicator.ini
+  * Move nordvpn-indicator.conf to .config/nordvpn/inidcator.conf
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 29 Sep 2020 10:10:32 +0200
+
 nordvpn-indicator (1.8.8) stable; urgency=low
 
   * Convert to Debian Python packaging
