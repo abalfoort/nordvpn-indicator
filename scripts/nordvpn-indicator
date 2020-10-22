@@ -1,9 +1,18 @@
 #!/bin/bash
 
+# Check if nordvpn is installed
+if [ -z "$(which nordvpn)" ]; then
+    pkexec nordvpn-install
+    if [ -z "$(which nordvpn)" ]; then
+        echo "Nordvpn not installed - exiting"
+        exit 1
+    fi
+fi
+
 PYTHON=$(which python3)
-if [ "$PYTHON" == '' ]; then
+if [ -z "$PYTHON" ]; then
   echo "Cannot find python3 executable - exiting"
-  exit
+  exit 2
 fi
 
 NVPNDIR="$HOME/.config/nordvpn"

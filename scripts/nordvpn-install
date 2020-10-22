@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ $UID -ne 0 ]; then
+  echo "Please, type root password..."
+  su -c "$0 $@"
+  exit
+fi
+
+# Check if nordvpn is installed
+if [ -z "$(which nordvpn)" ]; then
+    if [ ! -f /etc/apt/trusted.gpg.d/nordvpn_public.asc ]; then
+        # Get the nordvpn key file
+        wget -q https://repo.nordvpn.com/gpg/nordvpn_public.asc -P /etc/apt/trusted.gpg.d/
+    fi
+    # Check if the nordvpn repository was already configured
+    REPO=$(find /etc/apt/ -name "*.list" | xargs cat | grep  ^[[:space:]]*deb | grep nordvpn)
+    if [ -f /etc/apt/trusted.gpg.d/nordvpn_public.asc ] && [ -z "$REPO" ]; then
+        # Add nordvpn repository
+        echo 'deb https://repo.nordvpn.com/deb/nordvpn/debian stable main' | tee /etc/apt/sources.list.d/nordvpn.list
+        apt-get update
+    fi
+    apt-get install --assume-yes --quiet --allow-downgrades --allow-remove-essential --allow-change-held-packages nordvpn
+fi
+

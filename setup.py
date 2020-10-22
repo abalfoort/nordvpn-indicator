@@ -10,10 +10,12 @@ import pathlib, os
 PACKAGE_NAME='nordvpn-indicator'
 PACKAGE_DIR=PACKAGE_NAME
 PACKAGE_DATA={PACKAGE_NAME: ['*.svg', '*.conf', '*.exp']}
-SCRIPTS=['scripts/nordvpn-indicator']
+SCRIPTS=['scripts/nordvpn-indicator', 
+                  'scripts/nordvpn-install']
 DATA_FILES=[
     ('share/man/man1', ['man/nordvpn-indicator.1']),
     ('/etc/xdg/autostart', ['data/nordvpn-indicator.desktop']),
+    ('share/polkit-1/actions', ['data/com.nordvpn.pkexec.nordvpn-indicator.nordvpn-install.policy']),
     ('/etc/logrotate.d', ['data/nordvpn'])
 ]
 

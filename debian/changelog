@@ -1,3 +1,9 @@
+nordvpn-indicator (1.9.1) stable; urgency=low
+
+  * Install nordvpn through nordvpn repository
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 22 Oct 2020 09:50:20 +0200
+
 nordvpn-indicator (1.9.0) stable; urgency=low
 
   * Let nordvpn handle quick connect

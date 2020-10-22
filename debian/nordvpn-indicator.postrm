@@ -1,0 +1,15 @@
+#! /bin/sh
+
+set -e
+
+if [ -z "$(which nordvpn)" ]; then
+    if [ -f /etc/apt/trusted.gpg.d/nordvpn_public.asc ]; then
+        rm /etc/apt/trusted.gpg.d/nordvpn_public.asc
+    fi
+    if [ -f /etc/apt/sources.list.d/nordvpn.list ]; then
+        rm /etc/apt/sources.list.d/nordvpn.list
+        apt-get update
+    fi
+fi
+
+#DEBHELPER#

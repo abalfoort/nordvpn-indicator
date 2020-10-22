@@ -15,7 +15,6 @@ Package: nordvpn-indicator
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${python3:Depends}
-  , nordvpn (>= 3.3.0)
   , gir1.2-gtk-3.0
   , gir1.2-appindicator3-0.1
   , expect
@@ -23,6 +22,8 @@ Depends: ${misc:Depends}, ${python3:Depends}
   , jq
   , logrotate
   , xdg-utils
-Recommends: wireguard
+  , policykit-1
+Recommends: nordvpn (>= 3.3.0)
+  , wireguard
 Description: Systemtray icon for the NordVPN application
  After installation you need to logout and login again.
