@@ -12,13 +12,19 @@ INTERVAL = 10
 
 import gi
 gi.require_version('Gtk', '3.0')
-gi.require_version('AppIndicator3', '0.1')
+from gi.repository import Gtk
+try:
+    gi.require_version('AppIndicator3', '0.1')
+    from gi.repository import AppIndicator3
+except:
+    gi.require_version('AyatanaAppIndicator3', '0.1')
+    from gi.repository import AyatanaAppIndicator3 as AppIndicator3
 gi.require_version('Notify', '0.7')
 
 import subprocess
 import signal
 from threading import Event, Thread
-from gi.repository import Gtk, AppIndicator3, Notify
+from gi.repository import Notify
 from os.path import abspath, dirname, join, exists
 from pathlib import Path
 import re
@@ -73,7 +79,7 @@ class NordVPNIndicator():
         self.check_done_event = Event()
         # Create indicator object
         self.indicator = AppIndicator3.Indicator.new(APPINDICATOR_ID, self.connections[self.current_connection]['icon'], AppIndicator3.IndicatorCategory.SYSTEM_SERVICES)
-        self.indicator.set_title(_('NordVPN Indicator'))
+        self.indicator.set_title('NordVPN Indicator')
         self.indicator.set_status(AppIndicator3.IndicatorStatus.ACTIVE)
         self.indicator.set_menu(self.build_menu())
         # Init notifier
