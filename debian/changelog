@@ -1,3 +1,15 @@
+nordvpn-indicator (1.9.3) stable; urgency=low
+
+  * Add dependency: | gir1.2-ayatanaappindicator3-0.1
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 31 Dec 2020 17:08:16 +0100
+
+nordvpn-indicator (1.9.2) stable; urgency=low
+
+  * Updated translation: it
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 02 Nov 2020 11:40:45 +0100
+
 nordvpn-indicator (1.9.1) stable; urgency=low
 
   * Install nordvpn through nordvpn repository
