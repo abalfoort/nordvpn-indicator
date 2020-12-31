@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-20 16:20+0200\n"
+"POT-Creation-Date: 2020-12-31 17:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,71 +17,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: nordvpn-indicator/__init__.py:51
+#: nordvpn-indicator/__init__.py:57
 msgid "Get a NordVPN account"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:53 nordvpn-indicator/__init__.py:54
-#: nordvpn-indicator/__init__.py:56 nordvpn-indicator/__init__.py:57
+#: nordvpn-indicator/__init__.py:59 nordvpn-indicator/__init__.py:60
+#: nordvpn-indicator/__init__.py:62 nordvpn-indicator/__init__.py:63
 msgid "Quick connect"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:55
+#: nordvpn-indicator/__init__.py:61
 msgid "Disconnect"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:59
+#: nordvpn-indicator/__init__.py:65
 msgid "Manual connect"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:60
+#: nordvpn-indicator/__init__.py:66
 msgid "Status Information"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:61
+#: nordvpn-indicator/__init__.py:67
 msgid "Rate last connection"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:62
+#: nordvpn-indicator/__init__.py:68
 msgid "poor"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:63
+#: nordvpn-indicator/__init__.py:69
 msgid "excellent"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:64
+#: nordvpn-indicator/__init__.py:70
 msgid ""
 "You are not logged into NordVPN.\n"
 "Please, login with: nordvpn login"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:76 data/nordvpn-indicator.desktop.in.h:1
-msgid "NordVPN Indicator"
-msgstr ""
-
-#: nordvpn-indicator/__init__.py:170
+#: nordvpn-indicator/__init__.py:176
 msgid "Settings"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:174
+#: nordvpn-indicator/__init__.py:180
 msgid "Quit"
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:291
+#: nordvpn-indicator/__init__.py:297
 msgid "Not logged into NordVPN."
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:323
+#: nordvpn-indicator/__init__.py:329
 msgid "If the problem persists, contact NordVPN customer support."
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:324
+#: nordvpn-indicator/__init__.py:330
 #, python-brace-format
 msgid "Failed to connect to \"{0}\""
 msgstr ""
 
-#: nordvpn-indicator/__init__.py:324
+#: nordvpn-indicator/__init__.py:330
 #, python-brace-format
 msgid "Failed to disconnect from \"{0}\""
 msgstr ""
@@ -164,6 +160,10 @@ msgstr ""
 
 #: nordvpn-indicator/connect.py:29
 msgid "NordVPN Connect"
+msgstr ""
+
+#: data/nordvpn-indicator.desktop.in.h:1
+msgid "NordVPN Indicator"
 msgstr ""
 
 #: data/nordvpn-indicator.desktop.in.h:2

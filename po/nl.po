@@ -4,57 +4,57 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Arjen Balfoort <arjenbalfoort@solydxk.com>, 2020
+# Arjen Balfoort <arjenbalfoort@hotmail.com>, 2020
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-20 15:19+0200\n"
+"POT-Creation-Date: 2020-12-31 17:22+0100\n"
 "PO-Revision-Date: 2019-03-24 09:06+0000\n"
-"Last-Translator: Arjen Balfoort <arjenbalfoort@solydxk.com>, 2020\n"
-"Language-Team: Dutch (https://www.transifex.com/solydxk/teams/54212/nl/)\n"
+"Last-Translator: Arjen Balfoort <arjenbalfoort@hotmail.com>, 2020\n"
+"Language-Team: Dutch (https://www.transifex.com/abalfoort/teams/54212/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: nordvpn-indicator/__init__.py:51
+#: nordvpn-indicator/__init__.py:57
 msgid "Get a NordVPN account"
 msgstr "Een NordVPN account aanvragen"
 
-#: nordvpn-indicator/__init__.py:53 nordvpn-indicator/__init__.py:54
-#: nordvpn-indicator/__init__.py:56 nordvpn-indicator/__init__.py:57
+#: nordvpn-indicator/__init__.py:59 nordvpn-indicator/__init__.py:60
+#: nordvpn-indicator/__init__.py:62 nordvpn-indicator/__init__.py:63
 msgid "Quick connect"
 msgstr "Snel verbinden"
 
-#: nordvpn-indicator/__init__.py:55
+#: nordvpn-indicator/__init__.py:61
 msgid "Disconnect"
 msgstr "Verbreken"
 
-#: nordvpn-indicator/__init__.py:59
+#: nordvpn-indicator/__init__.py:65
 msgid "Manual connect"
 msgstr "Handmatig verbinden"
 
-#: nordvpn-indicator/__init__.py:60
+#: nordvpn-indicator/__init__.py:66
 msgid "Status Information"
 msgstr "Status Informatie"
 
-#: nordvpn-indicator/__init__.py:61
+#: nordvpn-indicator/__init__.py:67
 msgid "Rate last connection"
 msgstr "Waardeer de laatste connectie"
 
-#: nordvpn-indicator/__init__.py:62
+#: nordvpn-indicator/__init__.py:68
 msgid "poor"
 msgstr "slecht"
 
-#: nordvpn-indicator/__init__.py:63
+#: nordvpn-indicator/__init__.py:69
 msgid "excellent"
 msgstr "uitstekend"
 
-#: nordvpn-indicator/__init__.py:64
+#: nordvpn-indicator/__init__.py:70
 msgid ""
 "You are not logged into NordVPN.\n"
 "Please, login with: nordvpn login"
@@ -62,34 +62,30 @@ msgstr ""
 "U bent niet op NordVPN ingelogd.\n"
 "Log in met: nordvpn login"
 
-#: nordvpn-indicator/__init__.py:76 data/nordvpn-indicator.desktop.in.h:1
-msgid "NordVPN Indicator"
-msgstr "NordVPN Indicator"
-
-#: nordvpn-indicator/__init__.py:170
+#: nordvpn-indicator/__init__.py:176
 msgid "Settings"
 msgstr "Instellingen"
 
-#: nordvpn-indicator/__init__.py:174
+#: nordvpn-indicator/__init__.py:180
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: nordvpn-indicator/__init__.py:291
+#: nordvpn-indicator/__init__.py:297
 msgid "Not logged into NordVPN."
 msgstr "Niet op NordVPN ingelogd."
 
-#: nordvpn-indicator/__init__.py:323
+#: nordvpn-indicator/__init__.py:329
 msgid "If the problem persists, contact NordVPN customer support."
 msgstr ""
 "Als het probleem aanhoudt, neem dan contact op met de klantenservice van "
 "NordVPN."
 
-#: nordvpn-indicator/__init__.py:324
+#: nordvpn-indicator/__init__.py:330
 #, python-brace-format
 msgid "Failed to connect to \"{0}\""
 msgstr "Kon geen verbinding maken met \"{0}\"."
 
-#: nordvpn-indicator/__init__.py:324
+#: nordvpn-indicator/__init__.py:330
 #, python-brace-format
 msgid "Failed to disconnect from \"{0}\""
 msgstr "Kon verbinding niet verbreken met \"{0}\"."
@@ -181,6 +177,10 @@ msgstr "Login/wachtwoord niet gegeven."
 #: nordvpn-indicator/connect.py:29
 msgid "NordVPN Connect"
 msgstr "NordVPN Verbinden"
+
+#: data/nordvpn-indicator.desktop.in.h:1
+msgid "NordVPN Indicator"
+msgstr "NordVPN Indicator"
 
 #: data/nordvpn-indicator.desktop.in.h:2
 msgid "Systemtray icon for the NordVPN application"
