@@ -1,3 +1,9 @@
+nordvpn-indicator (1.9.4) stable; urgency=low
+
+  * Add dependency: gir1.2-notify-0.7
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 20 Jan 2021 12:04:23 +0100
+
 nordvpn-indicator (1.9.3) stable; urgency=low
 
   * Add dependency: | gir1.2-ayatanaappindicator3-0.1
