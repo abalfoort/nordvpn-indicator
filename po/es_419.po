@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# F A <jaw2pc@gmail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-14 08:38+0200\n"
+"PO-Revision-Date: 2019-03-24 09:06+0000\n"
+"Last-Translator: F A <jaw2pc@gmail.com>, 2022\n"
+"Language-Team: Spanish (Latin America) (https://www.transifex.com/abalfoort/teams/54212/es_419/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_419\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: nordvpn-indicator/__init__.py:57
+msgid "Get a NordVPN account"
+msgstr "Obtenga una cuenta NordVPN"
+
+#: nordvpn-indicator/__init__.py:59 nordvpn-indicator/__init__.py:60
+#: nordvpn-indicator/__init__.py:62 nordvpn-indicator/__init__.py:63
+msgid "Quick connect"
+msgstr "Conexión rápida"
+
+#: nordvpn-indicator/__init__.py:61
+msgid "Disconnect"
+msgstr "Desconectar"
+
+#: nordvpn-indicator/__init__.py:65
+msgid "Manual connect"
+msgstr "Conexión manual"
+
+#: nordvpn-indicator/__init__.py:66
+msgid "Status Information"
+msgstr "Información sobre el estado"
+
+#: nordvpn-indicator/__init__.py:67
+msgid "Rate last connection"
+msgstr "Calificar la última conexión"
+
+#: nordvpn-indicator/__init__.py:68
+msgid "poor"
+msgstr "pobre"
+
+#: nordvpn-indicator/__init__.py:69
+msgid "excellent"
+msgstr "excelente"
+
+#: nordvpn-indicator/__init__.py:70
+msgid ""
+"You are not logged into NordVPN.\n"
+"Please, login with: nordvpn login"
+msgstr ""
+"No has iniciado sesión en NordVPN.\n"
+"Por favor, inicie sesión con: nordvpn login"
+
+#: nordvpn-indicator/__init__.py:176
+msgid "Settings"
+msgstr "Ajustes"
+
+#: nordvpn-indicator/__init__.py:180
+msgid "Quit"
+msgstr "Salir"
+
+#: nordvpn-indicator/__init__.py:297
+msgid "Not logged into NordVPN."
+msgstr "No ha iniciado sesión en NordVPN."
+
+#: nordvpn-indicator/__init__.py:329
+msgid "If the problem persists, contact NordVPN customer support."
+msgstr ""
+"Si el problema persiste, póngase en contacto con el servicio de atención al "
+"cliente de NordVPN."
+
+#: nordvpn-indicator/__init__.py:330
+#, python-brace-format
+msgid "Failed to connect to \"{0}\""
+msgstr "No se ha podido conectar con \"{0}\""
+
+#: nordvpn-indicator/__init__.py:330
+#, python-brace-format
+msgid "Failed to disconnect from \"{0}\""
+msgstr "Fallo al desconectar de \"{0}\""
+
+#: nordvpn-indicator/settings.py:34
+msgid "NordVPN Settings"
+msgstr "Ajustes de NordVPN"
+
+#: nordvpn-indicator/settings.py:53
+msgid "Auto Connect"
+msgstr "Conexión automática"
+
+#: nordvpn-indicator/settings.py:54
+msgid ""
+"Automatically connect to NordVPN on login.\n"
+"You can optionally select a country or a recommended server."
+msgstr ""
+"Conectar automáticamente a NordVPN al iniciar la sesión.\n"
+"Puede seleccionar opcionalmente un país o un servidor recomendado."
+
+#: nordvpn-indicator/settings.py:80
+msgid "Cyber Security"
+msgstr "Ciberseguridad"
+
+#: nordvpn-indicator/settings.py:81
+msgid ""
+"Automatically block suspicious websites\n"
+"and block advertisements."
+msgstr ""
+"Bloquear automáticamente los sitios web sospechosos\n"
+"y bloquear los anuncios."
+
+#: nordvpn-indicator/settings.py:87
+msgid "Kill Switch"
+msgstr "Interruptor de apagado"
+
+#: nordvpn-indicator/settings.py:88
+msgid ""
+"Disable system-wide internet access\n"
+"if the VPN connection suddenly disconnects."
+msgstr ""
+"Desactivar el acceso a Internet en todo el sistema\n"
+"si la conexión VPN se desconecta repentinamente."
+
+#: nordvpn-indicator/settings.py:94
+msgid "Protocol"
+msgstr "Protocolo"
+
+#: nordvpn-indicator/settings.py:107
+msgid "NordLynx"
+msgstr "NordLynx"
+
+#: nordvpn-indicator/settings.py:108
+msgid ""
+"Use NordLynx instead of OpenVPN.\n"
+"Deselect to use the default OpenVPN."
+msgstr ""
+"Utilizar NordLynx en lugar de OpenVPN.\n"
+"Deseleccionar para utilizar el OpenVPN por defecto."
+
+#: nordvpn-indicator/settings.py:113
+msgid "Logs"
+msgstr "Registros"
+
+#: nordvpn-indicator/settings.py:117
+msgid "View Logs"
+msgstr "Ver registros"
+
+#: nordvpn-indicator/login.py:29
+msgid "NordVPN Login"
+msgstr "Acceso a NordVPN"
+
+#: nordvpn-indicator/login.py:46
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: nordvpn-indicator/login.py:54
+msgid "Password"
+msgstr "Contraseña"
+
+#: nordvpn-indicator/login.py:81
+msgid "Cannot find {}."
+msgstr "No se puede encontrar {}."
+
+#: nordvpn-indicator/login.py:83
+msgid "Login/password was not given."
+msgstr "No se ha facilitado el nombre de usuario/contraseña."
+
+#: nordvpn-indicator/connect.py:29
+msgid "NordVPN Connect"
+msgstr "Conectar NordVPN"
+
+#: data/nordvpn-indicator.desktop.in.h:1
+msgid "NordVPN Indicator"
+msgstr "Indicador NordVPN"
+
+#: data/nordvpn-indicator.desktop.in.h:2
+msgid "Systemtray icon for the NordVPN application"
+msgstr "Icono de la bandeja del sistema para la aplicación NordVPN"
