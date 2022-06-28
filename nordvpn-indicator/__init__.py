@@ -41,8 +41,7 @@ from .nordvpn import is_loggedin, is_connected, get_fastest_server, \
 
 # i18n: http://docs.python.org/3/library/gettext.html
 import gettext
-from gettext import gettext as _
-gettext.textdomain(APPINDICATOR_ID)
+_ = gettext.translation(APPINDICATOR_ID, fallback=True).gettext
 
 
 class NordVPNIndicator():

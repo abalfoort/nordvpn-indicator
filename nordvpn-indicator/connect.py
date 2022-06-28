@@ -13,8 +13,7 @@ from .nordvpn import get_countries, get_recommended_servers, \
 
 # i18n: http://docs.python.org/3/library/gettext.html
 import gettext
-from gettext import gettext as _
-gettext.textdomain(APPINDICATOR_ID)
+_ = gettext.translation(APPINDICATOR_ID, fallback=True).gettext
 
 
 class NordVPNConnect(Gtk.Dialog):
