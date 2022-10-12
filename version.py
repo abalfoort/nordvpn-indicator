@@ -1,5 +1,5 @@
 __title__ = 'nordvpn-indicator'
-__version__ = '1.9.6'
+__version__ = '1.9.7'
 __author__ = 'Arjen Balfoort'
 __author_email__ = 'arjenbalfoort@solydxk.com'
 __maintainer__ = ''

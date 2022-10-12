@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-31 17:22+0100\n"
+"POT-Creation-Date: 2022-06-28 08:34+0200\n"
 "PO-Revision-Date: 2019-03-24 09:06+0000\n"
 "Last-Translator: Slobodan Simić <slsimic@gmail.com>, 2020\n"
 "Language-Team: Serbian (https://www.transifex.com/abalfoort/teams/54212/"
@@ -23,40 +23,40 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: nordvpn-indicator/__init__.py:57
+#: nordvpn-indicator/__init__.py:56
 msgid "Get a NordVPN account"
 msgstr "Отворите НордВПН налог"
 
-#: nordvpn-indicator/__init__.py:59 nordvpn-indicator/__init__.py:60
-#: nordvpn-indicator/__init__.py:62 nordvpn-indicator/__init__.py:63
+#: nordvpn-indicator/__init__.py:58 nordvpn-indicator/__init__.py:59
+#: nordvpn-indicator/__init__.py:61 nordvpn-indicator/__init__.py:62
 msgid "Quick connect"
 msgstr "Брзо повезивање"
 
-#: nordvpn-indicator/__init__.py:61
+#: nordvpn-indicator/__init__.py:60
 msgid "Disconnect"
 msgstr "Развежи"
 
-#: nordvpn-indicator/__init__.py:65
+#: nordvpn-indicator/__init__.py:64
 msgid "Manual connect"
 msgstr "Ручно повезивање"
 
-#: nordvpn-indicator/__init__.py:66
+#: nordvpn-indicator/__init__.py:65
 msgid "Status Information"
 msgstr "Статусне информације"
 
-#: nordvpn-indicator/__init__.py:67
+#: nordvpn-indicator/__init__.py:66
 msgid "Rate last connection"
 msgstr "Оцените последње повезивање"
 
-#: nordvpn-indicator/__init__.py:68
+#: nordvpn-indicator/__init__.py:67
 msgid "poor"
 msgstr "јадно"
 
-#: nordvpn-indicator/__init__.py:69
+#: nordvpn-indicator/__init__.py:68
 msgid "excellent"
 msgstr "изврсно"
 
-#: nordvpn-indicator/__init__.py:70
+#: nordvpn-indicator/__init__.py:69
 msgid ""
 "You are not logged into NordVPN.\n"
 "Please, login with: nordvpn login"
@@ -64,41 +64,41 @@ msgstr ""
 "Нисте пријављени на НордВПН.\n"
 "Пријавите се са: nordvpn login"
 
-#: nordvpn-indicator/__init__.py:176
+#: nordvpn-indicator/__init__.py:175
 msgid "Settings"
 msgstr "Поставке"
 
-#: nordvpn-indicator/__init__.py:180
+#: nordvpn-indicator/__init__.py:179
 msgid "Quit"
 msgstr "Изађи"
 
-#: nordvpn-indicator/__init__.py:297
+#: nordvpn-indicator/__init__.py:296
 msgid "Not logged into NordVPN."
 msgstr "Непријављен на НордВПН."
 
-#: nordvpn-indicator/__init__.py:329
+#: nordvpn-indicator/__init__.py:328
 msgid "If the problem persists, contact NordVPN customer support."
 msgstr "Ако проблем потраје, контактирајте НордВПН подршку."
 
-#: nordvpn-indicator/__init__.py:330
+#: nordvpn-indicator/__init__.py:329
 #, python-brace-format
 msgid "Failed to connect to \"{0}\""
 msgstr "Не могу да се повежем на „{0}“"
 
-#: nordvpn-indicator/__init__.py:330
+#: nordvpn-indicator/__init__.py:329
 #, python-brace-format
 msgid "Failed to disconnect from \"{0}\""
 msgstr "Не могу да се развежем са „{0}“"
 
-#: nordvpn-indicator/settings.py:34
+#: nordvpn-indicator/settings.py:33
 msgid "NordVPN Settings"
 msgstr "НордВПН поставке"
 
-#: nordvpn-indicator/settings.py:53
+#: nordvpn-indicator/settings.py:52
 msgid "Auto Connect"
 msgstr "Аутоматско повезивање"
 
-#: nordvpn-indicator/settings.py:54
+#: nordvpn-indicator/settings.py:53
 msgid ""
 "Automatically connect to NordVPN on login.\n"
 "You can optionally select a country or a recommended server."
@@ -106,11 +106,11 @@ msgstr ""
 "Аутоматски се повежи на НордВПН након пријаве.\n"
 "Можете изабрати земљу или препоручени сервер."
 
-#: nordvpn-indicator/settings.py:80
+#: nordvpn-indicator/settings.py:79
 msgid "Cyber Security"
 msgstr "Сајбер безбедност"
 
-#: nordvpn-indicator/settings.py:81
+#: nordvpn-indicator/settings.py:80
 msgid ""
 "Automatically block suspicious websites\n"
 "and block advertisements."
@@ -118,11 +118,11 @@ msgstr ""
 "Аутоматски блокира сумњиве веб\n"
 "сајтове и рекламе."
 
-#: nordvpn-indicator/settings.py:87
+#: nordvpn-indicator/settings.py:86
 msgid "Kill Switch"
 msgstr "Дугме „Убиј“"
 
-#: nordvpn-indicator/settings.py:88
+#: nordvpn-indicator/settings.py:87
 msgid ""
 "Disable system-wide internet access\n"
 "if the VPN connection suddenly disconnects."
@@ -130,15 +130,15 @@ msgstr ""
 "Искључује целокупан приступ интернету\n"
 "уколико се ВПН веза изненада прекине."
 
-#: nordvpn-indicator/settings.py:94
+#: nordvpn-indicator/settings.py:93
 msgid "Protocol"
 msgstr "Протокол"
 
-#: nordvpn-indicator/settings.py:107
+#: nordvpn-indicator/settings.py:106
 msgid "NordLynx"
 msgstr "Норд Линкс"
 
-#: nordvpn-indicator/settings.py:108
+#: nordvpn-indicator/settings.py:107
 msgid ""
 "Use NordLynx instead of OpenVPN.\n"
 "Deselect to use the default OpenVPN."
@@ -146,35 +146,35 @@ msgstr ""
 "Користите Норд Линкс уместо ОпенВПН.\n"
 "Поништите избор да користите подразумевани ОпенВПН."
 
-#: nordvpn-indicator/settings.py:113
+#: nordvpn-indicator/settings.py:112
 msgid "Logs"
 msgstr "Записник"
 
-#: nordvpn-indicator/settings.py:117
+#: nordvpn-indicator/settings.py:116
 msgid "View Logs"
 msgstr "Преглед записника"
 
-#: nordvpn-indicator/login.py:29
+#: nordvpn-indicator/login.py:28
 msgid "NordVPN Login"
 msgstr "НордВПН пријава"
 
-#: nordvpn-indicator/login.py:46
+#: nordvpn-indicator/login.py:45
 msgid "Email"
 msgstr "Е-пошта"
 
-#: nordvpn-indicator/login.py:54
+#: nordvpn-indicator/login.py:53
 msgid "Password"
 msgstr "Лозинка"
 
-#: nordvpn-indicator/login.py:81
+#: nordvpn-indicator/login.py:80
 msgid "Cannot find {}."
 msgstr "Не могу да нађем {}."
 
-#: nordvpn-indicator/login.py:83
+#: nordvpn-indicator/login.py:82
 msgid "Login/password was not given."
 msgstr "Пријава/лозинка није дата."
 
-#: nordvpn-indicator/connect.py:29
+#: nordvpn-indicator/connect.py:28
 msgid "NordVPN Connect"
 msgstr "НордВПН повезивање"
 
