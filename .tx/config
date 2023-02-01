@@ -1,9 +1,9 @@
 [main]
 host = https://www.transifex.com
-minimum_perc = 80
 
-[nordvpn-indicator.nordvpn-indicatorpot]
-source_file = po/nordvpn-indicator.pot
+[o:abalfoort:p:nordvpn-indicator:r:nordvpn-indicatorpot]
 file_filter = po/<lang>.po
+source_file = po/nordvpn-indicator.pot
 source_lang = en
-type = PO
+type        = PO
+
