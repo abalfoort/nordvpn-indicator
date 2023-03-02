@@ -1,7 +1,7 @@
 __title__ = 'nordvpn-indicator'
 __version__ = '1.9.8'
 __author__ = 'Arjen Balfoort'
-__author_email__ = 'arjenbalfoort@solydxk.com'
+__author_email__ = 'arjenbalfoort@hotmail.com'
 __maintainer__ = ''
 __maintainer_email__ = ''
 __url__ = 'https://gitlab.com/abalfoort/nordvpn-indicator'
